@@ -1,0 +1,54 @@
+*{
+  margin:0%;
+  padding:0%;
+  box-sizing:border-box;
+}
+  body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-size: cover;
+    background-position: center;
+  }
+form,
+input,
+textarea,
+button{
+  background: rgb(11, 12, 22);
+  box-shadow: 0 8px 32px 0 grey;
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+  color: whitesmoke;
+  padding:30px;
+  margin-left:10px; 
+  }
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+*{
+  margin:0%;
+  padding:2%;
+  box-sizing: border-box
+}
+
+ul{
+  display:inline;
+  background-color:rgb(124, 37, 25);
+  left:0;
+  right:0;
+  position: fixed;
+  font-size: 20px;
+  top: 0;
+}
+li{
+  display: inline;
+}
+a{
+  padding:20px;
+  color:whitesmoke;
+  text-decoration:none;
+  font-family: sans-serif;
+}
