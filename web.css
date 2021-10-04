@@ -3,21 +3,28 @@
   padding:0%;
   box-sizing:border-box;
 }
-  body {
+body {
     height: 100vh;
-    display: grid;
+    display:center;
     place-items: center;
     background-size: cover;
     background-position: center;
   }
+.myDiv {
+  border: 5px outset rgb(127, 153, 80);
+  background-color: lightblue;    
+  text-align: center;
+  margin-left: auto;
+}
+ 
 form,
 input,
 textarea,
 button{
   background: rgb(11, 12, 22);
-  box-shadow: 0 8px 32px 0 grey;
+  box-shadow: 0 4px 10px 0 grey;
   backdrop-filter: blur(6px);
-  border-radius: 10px;
+  border-radius: 5px;
   color: whitesmoke;
   padding:30px;
   margin-left:10px; 
@@ -47,8 +54,29 @@ li{
   display: inline;
 }
 a{
-  padding:20px;
+  padding:10px;
   color:whitesmoke;
   text-decoration:none;
   font-family: sans-serif;
+}
+
+iframe{
+  margin-left: 460px;
+  margin-top: 15px;
+  width: auto;
+}
+table{
+  margin-left: 460px;
+  width: 500px;
+  
+
+}
+.img{
+  clip-path:circle();
+  border-radius: 700%;
+  position:absolute; right: 980px;
+  height: 250px;
+  
+  
+
 }
