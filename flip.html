@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  h1{
+    text-align: center;
+    color: cornsilk;
+  }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("pexels-photo-235986.jpeg");
+  background-color: chartreuse;
+  text-align: center;
+ 
+}
+
+.flip-card {
+  background-color: transparent;
+ 
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  display: inline-block;
+  background-image: url("https://image.shutterstock.com/image-photo/old-brick-black-color-wall-600w-1605128917.jpg");
+  background-color: blanchedalmond;
+  margin: 15px;
+  
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: rgb(37, 27, 27);
+  transform: rotateY(180deg);
+}
+img{
+  width: 200px;
+  height: 200px;
+  object-fit: fill;
+}
+</style>
+<body>
+  <h1>Testimonials</h1>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="index.jpeg" alt="Testimonial" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Xola Magatya</h1>
+            <p>This is my classmat, who inspire to be a programmer at the end of this program. </p>
+            <p>Be Blessed</p>
+          </div>
+        </div>
+      </div>
+      <!-- second  -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="index2.jpeg" alt="Avatar" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Bulela Gomoshe</h1>
+            <p>A very hands on young man who is eager to learn coding</p>
+            <p>a Future Programmer</p>
+          </div>
+        </div>
+      </div> 
+      <!-- third -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="index3.jpeg" alt="Young People" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Emanuel Fente</h1>
+            <p>Hard working</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div> 
+</body>
+</html>

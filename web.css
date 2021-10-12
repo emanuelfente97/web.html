@@ -3,20 +3,33 @@
   padding:0%;
   box-sizing:border-box;
 }
+ nav {
+        top: 0%;
+        left: 0%;
+        position: fixed;
+        text-align: left;
+        z-index: 3;
+      }
 body {
     height: 100vh;
-    display:center;
+    display:flexbox;
+    flex-direction: column;
+    justify-content: center;
     place-items: center;
     background-size: cover;
     background-position: center;
+
+  }
+  .about_section{
+    text-align: left;
   }
 .myDiv {
   border: 5px outset rgb(127, 153, 80);
   background-color: lightblue;    
   text-align: center;
-  margin-left: auto;
-  
+  margin-left: auto; 
 }
+
  
 form,
 input,
@@ -29,13 +42,52 @@ button{
   color: whitesmoke;
   padding:30px;
   margin-left:10px; 
+
   }
 form {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
+/* Social Media Styling */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  height: 10px;
+  /* display:inline-flexbox; */
+}
 
+.media{
+  display: flex;
+  align-self: center;
+  /* margin-left: 100px; */
+  /* padding:100px; */
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
 *{
   margin:0%;
   padding:2%;
@@ -55,30 +107,35 @@ li{
   display: inline;
 }
 a{
-  padding:10px;
+  padding: 10px;
   color:whitesmoke;
   text-decoration:none;
   font-family: sans-serif;
+  display:inline;
 }
 
 iframe{
-  margin-left: 460px;
+  margin-left: 150px;
+  margin-right: 150px;
   margin-top: 15px;
   width: auto;
 }
 table{
-  margin-left: 460px;
-  width: 500px;
-
-  
-
+  margin-left: 0px;
+  width: 1000px; 
 }
 .img{
+  display: flexbox;
+  flex-direction: column;
+  justify-content: center;
   clip-path:circle();
   border-radius: 700%;
   position:absolute; right: 980px;
   height: 300px;
-  
-  
-
+  float: left;
 }
+p{
+  padding-top: 120px;
+}
+
+
